@@ -1,0 +1,33 @@
+1. Different types of errors in Java
+In Java, there are two types of errors:
+* Compile-time errors are errors that are detected by the compiler. These errors are usually caused by syntax errors in the code.
+* Run-time errors are errors that are detected by the Java Virtual Machine (JVM) during execution. These errors are usually caused by logical errors in the code.
+2. What is an exception in Java?
+An exception is an event that occurs during the execution of a program that disrupts the normal flow of the program's instructions. Exceptions can be caused by a variety of factors, such as invalid input, accessing a non-existent object, or dividing by zero.
+3. How to handle exceptions in Java?
+Exception handling is a mechanism in Java that allows you to deal with exceptions gracefully. When an exception occurs, the program control is transferred to an exception handler, which is a block of code that is specifically designed to deal with that type of exception.
+The following is an example of how to handle exceptions in Java:
+try {
+  // Code that may throw an exception
+} catch (Exception e) {
+  // Handle the exception
+}
+The try block contains the code that may throw an exception. If an exception is thrown, the program control is transferred to the catch block, which will handle the exception.
+The catch block can be used to print a message, log the exception, or take any other action that is necessary to deal with the exception.
+Finally block
+The finally block is a special block that is always executed, regardless of whether or not an exception is thrown. The finally block is often used to close resources, such as files or sockets.
+The following is an example of how to use the finally block:
+try {
+  // Code that may throw an exception
+} catch (Exception e) {
+  // Handle the exception
+} finally {
+  // Close resources
+}
+
+4. Why do we need exception handling in Java?
+Exception handling is important in Java because it allows you to deal with errors gracefully. Without exception handling, if an error occurs, the program will simply terminate. This can be inconvenient for the user and can also lead to data loss. Exception handling allows you to catch the error and take appropriate action, such as logging the error, displaying a message to the user, or retrying the operation.
+5. What is the difference between exception and error in Java?
+The main difference between an exception and an error is that an exception can be handled, while an error cannot. An exception is an event that occurs during the execution of a program that disrupts the normal flow of the program's instructions. An error is a problem that occurs due to a system-level issue, such as running out of memory.
+Here is a table summarizing the differences between exceptions and errors in Java:
+FeatureExceptionErrorCauseProblem in the program codeProblem in the systemHandlingCan be handled by the programmerCannot be handled by the programmerExamplesDividing by zero, accessing a non-existent objectOut of memory error, Stack overflow error
